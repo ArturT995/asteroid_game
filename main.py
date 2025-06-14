@@ -16,11 +16,21 @@ from constants import *
 
 def main():
     pygame.init()
+    
     #for smaller projects its fine to use wildcard import(*)
     #but on larger projects you could get conflicting import names
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-    while screen == screen:
-        pygame.fill(0,0,0)
+    
+    #game loop, infinite
+    while 1 == 1:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                return
+        screen.fill("black")
+        pygame.display.flip()
+
+    
+
     print("Starting Asteroids!")
     print("Screen width: 1280")
     print("Screen height: 720")
