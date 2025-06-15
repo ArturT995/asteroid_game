@@ -1,4 +1,4 @@
-#copied from assignment file, feel free to change them later if you want.
+
 SCREEN_WIDTH = 1280
 SCREEN_HEIGHT = 720
 
@@ -9,3 +9,5 @@ ASTEROID_MIN_RADIUS = 20
 ASTEROID_KINDS = 3
 ASTEROID_SPAWN_RATE = 0.8  # seconds
 ASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS
+SHOT_RADIUS = 5
+PLAYER_SHOOT_SPEED = 500
